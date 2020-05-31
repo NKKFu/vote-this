@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote This</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+</head>
+
+<body>
+
+    <button onclick='newPool()'>Create pool</button>
+    <script>
+        const socket = io.connect('http://localhost:5000/');
+        let myPool;
+
+        function newPool() {
+            const id = new Date().getTime();
+            socket.emit('create pool', id);
+            console.log(`shake your pool: http://localhost:5000/vote/${id}`);
+        }
+    </script>
+</body>
+
+</html>
