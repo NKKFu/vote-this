@@ -27,4 +27,4 @@ Frontend:
 
 ## License
 
-Projeto sob (licença MIT)[https://github.com/NKKFu/vote-this/blob/master/LICENSE]
+Projeto sob [licença MIT](https://github.com/NKKFu/vote-this/blob/master/LICENSE)
