@@ -6,11 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vote This</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body>
+    <div class="header">
+        <p class="welcome">Bem vindo à</p>
+        <h1 class="title">Vote this</h1>
+        <p class="information">Crie votações em tempo real para realizar diversas decisões importantes à você, aplicação
+            em desenvolvimento e <b>open-source</b> 😀</p>
+        <div class="form">
+            <div class="new-pool-form">
+                <input maxlength="35" class="new-pool-input" placeholder="dê um nome à sua pool">
+                <div onclick='newPool()' class="new-pool-button">
+                    <p>CRIAR</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="https://github.com/NKKFu/vote-this">
+        <div class="footer">
+            <p>Open source on</p>
+            <img src="./GitHub_Logo.png" alt="github">
+        </div>
+    </a>
 
-    <button onclick='newPool()'>Create pool</button>
     <script>
         const socket = io.connect('http://localhost:5000/');
         let myPool;

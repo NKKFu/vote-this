@@ -16,7 +16,7 @@ let votationPool = [];
     ]
  */
 
-app.use(express.static('./public'));
+app.use(express.static(__dirname + '/public'));
 
 const PORT = process.env.PORT || 5000;
 server.listen(PORT);
