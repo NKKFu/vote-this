@@ -22,11 +22,12 @@ Crie votações online, gratuito e em tempo real. Projeto de código aberto e li
 ### Backend:
 - Express
 - Socket.io
+- NodeJS
 
 ### Frontend:
 - HTML5
 - SCSS
-- Javascript
+- Typescript
 
 ## License 📃
 

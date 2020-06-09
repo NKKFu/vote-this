@@ -1,0 +1,22 @@
+{
+	"version": "2.1.5",
+	"compilerOptions": {
+		"declaration": false,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"module": "umd",
+		"moduleResolution": "node",
+		"outDir": "_build/",
+		"removeComments": false,
+		"sourceMap": true,
+		"strict": true,
+		"target": "es5",
+		"lib": [
+			"es2015",
+			"dom"
+		]
+	},
+	"include": [
+		"./src/**/*.ts"
+	]
+}

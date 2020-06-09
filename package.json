@@ -2,11 +2,20 @@
   "name": "vote-this",
   "main": "index.js",
   "version": "0.1.0",
+  "scripts": {
+    "build": "tsc -w",
+    "start": "ts-node-dev src/index.ts"
+  },
   "dependencies": {
+    "@types/express": "^4.17.6",
     "express": "^4.17.1",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "@types/socket.io": "^2.1.8",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.9.5"
   }
 }
